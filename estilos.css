@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    height: 80px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    text-transform: capitalize;
+    align-items:center ;
+}
+
+
+header aside img{
+    height: 100%;
+}
+
+.logo{
+    color: white;
+    display: block;
+}
+.logo img{
+width: 90px;
+height: auto;
+}
+.barra ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+.barra a{
+    text-decoration: none;
+    color: white;
+}
+.barra ul li{
+    display: inline-block;
+}
+
+.barra a:hover{
+    color:bisque;
+}
+
+main{
+    color: black;
+}
+.games{ 
+    position:relative;
+    width: 100%; 
+    height: 100vh;
+    object-fit: cover;
+}
+.capa{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.486);
+}
+.pregunta{ 
+    position:relative;
+    width: 100%; 
+    height: 100vh;
+    object-fit: cover;
+    background: rgb(0,0,0);
+    background: linear-gradient(16deg, rgba(0,0,0,1) 0%, rgba(89,83,83,1) 50%, rgba(136,2,2,1) 100%);
+}
+.form_container, .container__titles {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    padding: 20px;
+    width: 640px;
+    height: 700px;
+    color: #fff;
+}
+
+.container__titles {
+    background-color: #06060661;
+    left: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.container__titles h2 {
+    font-family: "Fortune", cursive;
+    font-size: 6.2rem;
+} 
+/*tarjetas*/
+.card{
+    height: 400px;
+    width: 100%;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px rgba(0,0,0, .45) ;
+    /*grillas*/
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3,5fr);
+    
+}
+.card img{ 
+border-radius: 5px 5px 0 0;
+width: 100%;
+height: 200px;
+object-fit: cover;
+}
+.card .card_title{
+    padding: 0 10px;
+}
+.card .card_title h5{
+    font-size: .85rem;
+    font-style: oblique;
+    text-transform: capitalize;
+}
+.card_title h4{
+    font-size: 1.2rem;
+}
+.card .card_container{
+    width: 100%;
+    padding: 10px;
+    font-size: .80rem;
+    display: flex;
+    flex: column wrap;
+    justify-content: space-between;
+}
+/*footer*/
+footer{
+    background-color: #4b4141;
+}
+
+footer.piesito {
+    padding: 1rem 7%;
+    background-color: #222;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    color: #fdfdfd;
+
+} 
+
+.piesito_pagina h2 {
+    font-size: 5.4rem;
+}
+
+.piesito_pagina .links h2 img {
+    margin: 0 2px;
+    width: 0.95rem;
+
+}
+
+.piesito_pagina ul, .pie_pagina form {
+    padding: 10px 0;
+    width: 250px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.piesito_pagina form {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.piesito_pagina form input, .pie_pagina form button.boton {
+    padding: 2px;
+    height: 35px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+
+.piesito_pagina form button.boton.boton_news {
+    align-self: end;
+    background-color: #ff6633;
+
+    padding: 2px 5px;
+    color: #fdfdfd;
+}
+
+
+.piesito_pagina .contacto ul {
+    height: 100px;
+
+}
+
+.piesito_pagina ul .link_item a {
+    color: #fdfdfd;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+/*media queries*/
+@media  (min-width: 360px) and (max-width:995px){
+    .games{
+        left: auto;
+    }
+}
+@media (min-width: 360px) and (max-width:995px){
+    .card .card_container{
+        left: auto;
+    }
+}
